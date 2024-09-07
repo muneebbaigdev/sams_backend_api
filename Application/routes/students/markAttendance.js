@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-import queryAsync from '../../functions/queryAsync';
-import getCurrentDate from '../../functions/getCurrentDate';
-import countOccurrenceszx from '../../functions/countOccurrenceszx';
+const queryAsync = require('../../functions/queryAsync')
+const getCurrentDate = require('../../functions/getCurrentDate')
+const countOccurrenceszx = require('../../functions/countOccurrenceszx')
 
 
 router.post('/', async (req, res) => {
@@ -73,3 +73,4 @@ router.post('/', async (req, res) => {
   
   
   });
+  module.exports = router

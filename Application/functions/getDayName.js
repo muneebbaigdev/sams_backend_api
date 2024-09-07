@@ -1,4 +1,4 @@
-export default function getDayName(inputDate) {
+function getDayName(inputDate) {
     // Extract year, month, and day from the inputDate string
     const year = inputDate.slice(1, 5);
     const month = inputDate.slice(5, 7) - 1; // Month is zero-based in JavaScript Date object
@@ -16,3 +16,4 @@ export default function getDayName(inputDate) {
     // Return the day name corresponding to the dayIndex
     return dayNames[dayIndex];
   }
+module.exports = getDayName

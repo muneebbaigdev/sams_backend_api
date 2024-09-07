@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
-import queryAsync from '../../functions/queryAsync'
-import getCurrentDate from '../../functions/getCurrentDate';
+const queryAsync = require('../../functions/queryAsync')
+const getCurrentDate = require('../../functions/getCurrentDate')
 
 router.post('/', async (req,res)=>{
     const authorize = await queryAsync("select *from attendence.employees where password = '"+req.body.token+"';")
@@ -54,3 +54,5 @@ router.post('/', async (req,res)=>{
       res.send(responseArray)
     }
   });
+
+module.exports = router

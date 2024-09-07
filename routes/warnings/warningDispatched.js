@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router()
-import queryAsync from '../../functions/queryAsync';
+const queryAsync = require('../../functions/queryAsync')
 const mysql = require("./connector").con
 
 
@@ -18,3 +18,4 @@ router.post('/', async (req,res)=>{
       });
     }
   })
+  module.exports = router

@@ -1,4 +1,4 @@
-export default function groupDatesIntoWeeks(dates) {
+function groupDatesIntoWeeks(dates) {
     // Convert dates to JavaScript Date objects
     const dateObjects = dates.map(dateString => new Date(dateString));
     
@@ -35,3 +35,4 @@ export default function groupDatesIntoWeeks(dates) {
     
     return weeks;
     }
+module.exports = groupDatesIntoWeeks

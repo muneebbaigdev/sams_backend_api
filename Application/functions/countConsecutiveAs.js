@@ -1,4 +1,4 @@
-export default async function countConsecutiveAs(arr,dayss) {
+async function countConsecutiveAs(arr,dayss) {
     let result = [];
     let count = 0;
   
@@ -18,3 +18,4 @@ export default async function countConsecutiveAs(arr,dayss) {
       }
       return result
   }
+module.exports = countConsecutiveAs

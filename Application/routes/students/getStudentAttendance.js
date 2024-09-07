@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router()
-import queryAsync from '../../functions/queryAsync';
+const queryAsync = require('../../functions/queryAsync')
 
 
 router.post('/',async (req,res)=>{
@@ -9,3 +9,4 @@ router.post('/',async (req,res)=>{
   console.log(req.body)
     }
   })
+  module.exports = router

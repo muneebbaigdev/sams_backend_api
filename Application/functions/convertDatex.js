@@ -1,4 +1,4 @@
-export default function convertDatex(dateString) {
+function convertDatex(dateString) {
     // Extract the year, month, and day from the input date string
     const year = dateString.slice(1, 5);
     const month = dateString.slice(5, 7);
@@ -9,3 +9,4 @@ export default function convertDatex(dateString) {
   
     return formattedDate;
   }
+module.exports = convertDatex

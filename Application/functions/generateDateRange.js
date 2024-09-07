@@ -1,4 +1,4 @@
-export default async function generateDateRange(startDate, endDate) {
+async function generateDateRange(startDate, endDate) {
     let matcher = await queryAsync('select * from attendence.attendence')
     let matcher1 = matcher[0]
     let dateArray = '';
@@ -18,3 +18,4 @@ export default async function generateDateRange(startDate, endDate) {
   
     return dateArray.slice(0, -1) ;
   }
+module.exports = generateDateRange

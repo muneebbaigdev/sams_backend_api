@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
-import queryAsync from '../../functions/queryAsync'
-import convertDateFormat from '../../functions/convertDateFormat';
+const queryAsync = require('../../functions/queryAsync')
+const convertDateFormat = require('../../functions/convertDateFormat')
 
 
 
@@ -54,3 +54,4 @@ router.post('/', async (req, res) => {
   res.send(present)
     }
   });
+  module.exports = router

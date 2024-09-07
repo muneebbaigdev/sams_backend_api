@@ -1,4 +1,4 @@
-export default function convertDateFormatzx(dateString) {
+function convertDateFormatzx(dateString) {
     // Split the input date string by '-'
     const parts = dateString.split('-');
     
@@ -7,3 +7,4 @@ export default function convertDateFormatzx(dateString) {
     
     return formattedDate;
   }
+module.exports = convertDateFormatzx

@@ -1,4 +1,4 @@
-export default function countOccurrenceszx(obj, valueToCount) {
+function countOccurrenceszx(obj, valueToCount) {
     let count = 0;
   
     // Iterate over the object keys and check if the value matches the one to count
@@ -10,3 +10,4 @@ export default function countOccurrenceszx(obj, valueToCount) {
   
     return count;
   }
+  module.exports = countOccurrenceszx

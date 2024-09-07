@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router()
-import queryAsync from '../../functions/queryAsync';
-import groupDatesIntoMonths from '../../functions/groupDatesIntoMonths';
-import groupDatesIntoWeeks from '../../functions/groupDatesIntoWeeks';
-import groupDatesIntoYears from '../../functions/groupDatesIntoYears';
-import formatDatex from '../../functions/formatDatex';
-import getDayOfWeek from '../../functions/getDayOfWeek';
-import countOccurrenceszx from '../../functions/countOccurrenceszx';
-import convertDatex from '../../functions/convertDatex';
+const queryAsync = require('../../functions/queryAsync')
+const groupDatesIntoMonths = require('../../functions/groupDatesIntoMonths')
+const groupDatesIntoWeeks = require('../../functions/groupDatesIntoWeeks')
+const groupDatesIntoYears = require('../../functions/groupDatesIntoYears')
+const formatDatex = require('../../functions/formatDatex')
+const getDayOfWeek = require('../../functions/getDayOfWeek')
+const countOccurrenceszx = require('../../functions/countOccurrenceszx')
+const convertDatex = require('../../functions/convertDatex')
 
 router.post('/', async (req,res)=>{
     const authorize = await queryAsync("select *from attendence.employees where password = '"+req.body.token+"';")
@@ -325,3 +325,4 @@ router.post('/', async (req,res)=>{
     }
   
   })
+  module.exports = router

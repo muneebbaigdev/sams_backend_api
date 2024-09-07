@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
-import queryAsync from '../../functions/queryAsync'
-const mysql = require("./connector").con
-import getCurrentDate from '../../functions/getCurrentDate'
+const queryAsync = require('../../functions/queryAsync')
+const mysql = require("../../connector").con
+const getCurrentDate = require('../../functions/getCurrentDate')
 
 router.post('/', async (req,res)=>{
 
@@ -25,3 +25,4 @@ router.post('/', async (req,res)=>{
         }
       }
   })
+  module.exports = router

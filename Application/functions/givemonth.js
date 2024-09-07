@@ -1,4 +1,4 @@
-export default function givemonth(e){
+function givemonth(e){
     switch(e){
       case ('01'):
       return('January')
@@ -40,3 +40,5 @@ export default function givemonth(e){
       break;
     }
   }
+
+module.exports = givemonth

@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router()
-import queryAsync from '../../functions/queryAsync';
-import convertDateFormatzx from '../../functions/convertDateFormatzx'
-import convertDate from '../../functions/convertDate';
-import getDatesInRange from '../../functions/getDatesInRange';
-import countOccurrences from '../../functions/countOccurrences';
+const queryAsync = require('../../functions/queryAsync')
+const convertDateFormatzx = require('../../functions/convertDateFormatzx')
+const convertDate = require('../../functions/convertDate')
+const getDatesInRange = require('../../functions/getDatesInRange')
+const countOccurrences = require('../../functions/countOccurrences')
 
 
 router.post('/',async (req,res)=>{
@@ -93,3 +93,4 @@ router.post('/',async (req,res)=>{
     res.send(warningletters)
   }
   })
+  module.exports = router

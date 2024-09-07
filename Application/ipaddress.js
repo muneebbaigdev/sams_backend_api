@@ -1,1 +1,2 @@
-export default ipaddress = '192.168.100.1'
+const ipaddress = 'localhost'
+module.exports = ipaddress

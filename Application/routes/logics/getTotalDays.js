@@ -1,9 +1,9 @@
 const express = require('express')
 const router = express.Router()
-import queryAsync from '../../functions/queryAsync'
-import countOccurrences from "./functions/countOccurrences";
-import convertDate from "./functions/convertDate";
-import getDatesInRange from "./functions/getDatesInRange";
+const queryAsync = require('../../functions/queryAsync')
+const countOccurrences = require("../../functions/countOccurrences")
+const convertDate = require("../../functions/convertDate")
+const getDatesInRange = require("../../functions/getDatesInRange")
 
 
 router.post('/',async (req,res)=>{
@@ -96,3 +96,4 @@ router.post('/',async (req,res)=>{
     res.send({totaldays:counter,totalp,totala,totall,totallt,firstwarning,secondwarning,thirdwarning})
   }
   })
+  module.exports = router

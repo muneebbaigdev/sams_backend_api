@@ -1,4 +1,4 @@
-export default function getYesterdayIfToday(dateStr) {
+function getYesterdayIfToday(dateStr) {
     // Get today's date
     const today = new Date();
     const year = today.getFullYear();
@@ -24,3 +24,4 @@ export default function getYesterdayIfToday(dateStr) {
         return dateStr;
     }
   }
+module.exports = getYesterdayIfToday

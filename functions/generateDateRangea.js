@@ -1,4 +1,4 @@
-export default function generateDateRangea(startDate, endDate) {
+function generateDateRangea(startDate, endDate) {
     let dateArray = [];
     const start = new Date(startDate.substring(0, 4), parseInt(startDate.substring(4, 6)) - 1, startDate.substring(6, 8));
     const end = new Date(endDate.substring(0, 4), parseInt(endDate.substring(4, 6)) - 1, endDate.substring(6, 8));
@@ -9,3 +9,4 @@ export default function generateDateRangea(startDate, endDate) {
   
     return dateArray;
   }
+module.exports - generateDateRangea

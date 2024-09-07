@@ -1,4 +1,4 @@
-export default function formatDate(dateStr) {
+function formatDate(dateStr) {
     const year = dateStr.substring(1, 5);
     const month = dateStr.substring(5, 7);
     const day = dateStr.substring(7, 9);
@@ -8,3 +8,4 @@ export default function formatDate(dateStr) {
   
     return `${day}-${monthName}-${year}`;
   }
+module.exports = formatDate

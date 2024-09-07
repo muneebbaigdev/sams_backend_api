@@ -1,4 +1,4 @@
-export default function groupDatesIntoMonths(dates) {
+function groupDatesIntoMonths(dates) {
     // Convert dates to JavaScript Date objects
     const dateObjects = dates.map(dateString => new Date(dateString));
     
@@ -30,3 +30,4 @@ export default function groupDatesIntoMonths(dates) {
     
     return months;
     }
+module.exports = groupDatesIntoMonths

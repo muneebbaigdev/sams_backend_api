@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router()
-import ip from ('../../ipaddress')
+const ip = require('../../ipaddress')
 
 router.post('/', async (req, res) => {
 
@@ -41,3 +41,4 @@ router.post('/', async (req, res) => {
     }
   
   });
+  module.exports = router

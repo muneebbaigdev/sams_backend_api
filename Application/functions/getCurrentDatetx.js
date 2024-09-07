@@ -1,4 +1,4 @@
-export default function getCurrentDatetx() {
+function getCurrentDatetx() {
     const currentDate = new Date();
     const day = currentDate.getDate();
     const monthNames = [
@@ -16,3 +16,4 @@ export default function getCurrentDatetx() {
   
     return formattedDate;
   }
+  module.exports = getCurrentDatetx

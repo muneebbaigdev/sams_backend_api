@@ -1,4 +1,4 @@
-export default function convertDateToDayForm(dateString) {
+function convertDateToDayForm(dateString) {
     const year = dateString.slice(0, 4);
     const month = dateString.slice(4, 6);
     const day = dateString.slice(6);
@@ -8,3 +8,4 @@ export default function convertDateToDayForm(dateString) {
   
     return dayOfWeek;
   }
+module.exports = convertDateToDayForm

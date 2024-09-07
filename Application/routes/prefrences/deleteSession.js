@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-import queryAsync from '../../functions/queryAsync'
+const queryAsync = require('../../functions/queryAsync')
 
 router.post('/', async (req,res)=>{
     const authorize = await queryAsync("select *from attendence.employees where password = '"+req.body.token+"';")
@@ -16,3 +16,4 @@ router.post('/', async (req,res)=>{
     })
   }
   })
+  module.exports = router

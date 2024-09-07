@@ -1,4 +1,4 @@
-export default function formatDatex(dateString) {
+function formatDatex(dateString) {
     const year = dateString.substring(1, 5);
     const month = dateString.substring(5, 7);
     const day = dateString.substring(7, 9);
@@ -8,3 +8,4 @@ export default function formatDatex(dateString) {
   
     return `${day}-${monthName}-${year}`;
   }
+module.exports = formatDatex

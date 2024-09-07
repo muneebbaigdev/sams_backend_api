@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router()
-import queryAsync from "../../functions/queryAsync";
-import countConsecutiveAs from "../../functions/countConsecutiveAs";
-import convertDateToDayForm from "../../functions/covertDateToDayForm";
+const queryAsync = require("../../functions/queryAsync")
+const countConsecutiveAs = require("../../functions/countConsecutiveAs")
+const convertDateToDayForm = require("../../functions/covertDateToDayForm")
 router.post('/', async (req, res) => {
 
     try {
@@ -64,3 +64,4 @@ router.post('/', async (req, res) => {
     }
   
   });
+  module.exports = router

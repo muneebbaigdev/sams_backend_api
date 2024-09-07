@@ -1,4 +1,4 @@
-export default function getCurrentTime() {
+function getCurrentTime() {
     const currentDate = new Date();
     let hours = currentDate.getHours();
     let minutes = currentDate.getMinutes();
@@ -12,3 +12,4 @@ export default function getCurrentTime() {
     // Return the formatted time string
     return `${hours}:${minutes}:${seconds}`;
   }
+module.exports = getCurrentTime

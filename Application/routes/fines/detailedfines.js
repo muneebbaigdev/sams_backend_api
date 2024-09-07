@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router()
-import queryAsync from "../../functions/queryAsync";
-import getYesterdayIfToday from "../../functions/getYesterdayIfToday";
-import generateDateRange from "../../functions/generateDateRange";
-import generateDateRangea from "../../functions/generateDateRangea";
-import getDayNames from "../../functions/getDayNames";
-import formatDate from "../../functions/formatDate";
-import getDayName from "../../functions/getDayName";
+const queryAsync = require('../../functions/queryAsync')
+const getYesterdayIfToday = require("../../functions/getYesterdayIfToday")
+const generateDateRange = require("../../functions/generateDateRange")
+const generateDateRangea = require("../../functions/generateDateRangea")
+const getDayNames = require("../../functions/getDayNames")
+const formatDate = require("../../functions/formatDate")
+const getDayName = require("../../functions/getDayName")
 
 
 router.post('/', async (req,res) => {
@@ -72,3 +72,4 @@ router.post('/', async (req,res) => {
     res.send(responseArray)
     
     })
+    module.exports = router

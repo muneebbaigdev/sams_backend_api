@@ -1,4 +1,4 @@
-export default function queryAsync(sql) {
+  const queryAsync = (sql)=>{
     return new Promise((resolve, reject) => {
       mysql.query(sql, (error, result) => {
         if (error) reject(error);
@@ -6,3 +6,4 @@ export default function queryAsync(sql) {
       });
     });
   }
+  module.exports = queryAsync

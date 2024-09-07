@@ -1,4 +1,4 @@
-export default function getCurrentDate() {
+function getCurrentDate() {
     const today = new Date();
     const year = today.getFullYear();
     const month = String(today.getMonth() + 1).padStart(2, '0'); // Months are zero-based
@@ -6,4 +6,5 @@ export default function getCurrentDate() {
   
     return year + month + day;
   }
+module.exports = getCurrentDate
   

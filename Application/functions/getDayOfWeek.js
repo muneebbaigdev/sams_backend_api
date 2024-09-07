@@ -1,4 +1,4 @@
-export default function getDayOfWeek(dateString) {
+function getDayOfWeek(dateString) {
     // Extract the numeric part of the date string (e.g., "20240321" from "d20240321")
     const numericDate = dateString.substring(1); // Remove the leading 'd'
   
@@ -14,3 +14,4 @@ export default function getDayOfWeek(dateString) {
     // Return the corresponding day name from the array
     return daysOfWeek[dayIndex];
   }
+module.exports = getDayOfWeek

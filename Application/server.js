@@ -6,7 +6,7 @@ const bodyparser = require("body-parser");
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
 const port = process.env.PORT || 8000;
-import ip from ('./ipaddress');
+const ip = require('./ipaddress')
 
 
 //analysis

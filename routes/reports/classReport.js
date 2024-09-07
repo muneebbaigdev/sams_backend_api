@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router()
-import queryAsync from '../../functions/queryAsync';
-import formatDatex from '../../functions/formatDatex';
-import groupDatesIntoWeeks from '../../functions/groupDatesIntoWeeks';
-import groupDatesIntoMonths from '../../functions/groupDatesIntoMonths';
-import givemonth from '../../functions/givemonth';
-import convertDatex from '../../functions/convertDatex';
-import groupDatesIntoYears from '../../functions/groupDatesIntoYears';
+const queryAsync = require('../../functions/queryAsync')
+const formatDatex = require('../../functions/formatDatex')
+const groupDatesIntoWeeks = require('../../functions/groupDatesIntoWeeks')
+const groupDatesIntoMonths = require('../../functions/groupDatesIntoMonths')
+const givemonth = require('../../functions/givemonth')
+const convertDatex = require('../../functions/convertDatex')
+const groupDatesIntoYears = require('../../functions/groupDatesIntoYears')
 
 router.post('/', async (req,res)=>{
     const authorize = await queryAsync("select *from attendence.employees where password = '"+req.body.token+"';")
@@ -260,3 +260,4 @@ router.post('/', async (req,res)=>{
   }
     
   })
+  module.exports = router
